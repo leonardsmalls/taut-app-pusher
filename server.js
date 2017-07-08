@@ -19,7 +19,7 @@ var pusher = new Pusher({
 
 
 pusher.trigger('my-channel', 'my-event', {
-  "message": "..."
+  "message": "How well were you taught the HTML lesson?"
 });
 
 

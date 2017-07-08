@@ -7,28 +7,40 @@
     <title>Taut Notifications</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <!-- Bootstrap 3.3.7 -->
-    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
-    <!-- Ionicons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-    <!-- jvectormap -->
-    <link rel="stylesheet" href="./plugins/jvectormap/jquery-jvectormap-1.2.2.css">
-    <!-- Theme style -->
-    <link rel="stylesheet" href="./dist/css/AdminLTE.min.css">
-    <!-- AdminLTE Skins. Choose a skin from the css/skins
+    <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.7 -->
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- jvectormap -->
+  <link rel="stylesheet" href="plugins/jvectormap/jquery-jvectormap-1.2.2.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+  <!-- AdminLTE Skins. Choose a skin from the css/skins
        folder instead of downloading all of them to reduce the load. -->
-    <link rel="stylesheet" href="./dist/css/skins/_all-skins.min.css">
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
+  <link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">
+
+  <!-- jQuery etc -->
+  <link href="plugins/lessonstats/css/default.css" rel="stylesheet" type="text/css" />
+  <link href="http://fonts.googleapis.com/css?family=Cabin+Sketch:bold" rel="stylesheet" type="text/css" />
+  <script src="plugins/lessonstats/js/jquery.js" type="text/javascript"></script>
+  <script src="plugins/lessonstats/js/raphael.js" type="text/javascript"></script>
+  <script src="plugins/lessonstats/js/init.js" type="text/javascript"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script href="http://www.gerardolarios.com/plugins-and-tools/jqmeter/js/jqmeter.min.js"></script>
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
   <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
-    <!-- Google Font -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+
+  <!-- Google Font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
     <style>
     body {
         background-color: #333;
@@ -458,8 +470,6 @@
                 <input name="lesson-name" type="text">
                 <button class="notify-me" onclick="notifyMe()">Notify me!</button>
                 <h1>
-        Dashboard
-        <small>Version 2.0</small>
       </h1>
                 <ol class="breadcrumb">
                     <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
@@ -540,7 +550,7 @@
                                         function theChart() {
                                             var chart = new CanvasJS.Chart("chartContainer", {
                                                 title: {
-                                                    text: "Class Self-Assessment of " + dbItem + " Lesson"
+                                                    text: "Class Self-Assessment of HTML Lesson"
                                                 },
                                                 axisX: {
                                                     interval: 1

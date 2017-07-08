@@ -3,31 +3,22 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>BootCampSpot Instructor Dashboard</title>
+  <title>AdminLTE 2 | Dashboard</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
-  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
   <!-- Ionicons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
   <!-- jvectormap -->
-  <link rel="stylesheet" href="plugins/jvectormap/jquery-jvectormap-1.2.2.css">
+  <link rel="stylesheet" href="./plugins/jvectormap/jquery-jvectormap-1.2.2.css">
   <!-- Theme style -->
-  <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+  <link rel="stylesheet" href="./dist/css/AdminLTE.min.css">
   <!-- AdminLTE Skins. Choose a skin from the css/skins
        folder instead of downloading all of them to reduce the load. -->
-  <link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">
-
-  <!-- jQuery etc -->
-  <link href="plugins/lessonstats/css/default.css" rel="stylesheet" type="text/css" />
-  <link href="http://fonts.googleapis.com/css?family=Cabin+Sketch:bold" rel="stylesheet" type="text/css" />
-  <script src="plugins/lessonstats/js/jquery.js" type="text/javascript"></script>
-  <script src="plugins/lessonstats/js/raphael.js" type="text/javascript"></script>
-  <script src="plugins/lessonstats/js/init.js" type="text/javascript"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script href="http://www.gerardolarios.com/plugins-and-tools/jqmeter/js/jqmeter.min.js"></script>
+  <link rel="stylesheet" href="./dist/css/skins/_all-skins.min.css">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -258,7 +249,7 @@
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <img src="dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
-              <span class="hidden-xs">Carl Poston</span>
+              <span class="hidden-xs">Alexander Pierce</span>
             </a>
             <ul class="dropdown-menu">
               <!-- User image -->
@@ -266,7 +257,8 @@
                 <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
 
                 <p>
-                  Carl Poston - Admin
+                  Alexander Pierce - Web Developer
+                  <small>Member since Nov. 2012</small>
                 </p>
               </li>
               <!-- Menu Body -->
@@ -447,11 +439,10 @@
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
-      <center>
-          <h1>
-            <img src="dist/img/tauttransparent.png">
-          </h1>
-      </center>
+      <h1>
+        Dashboard
+        <small>Version 2.0</small>
+      </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
         <li class="active">Dashboard</li>
@@ -462,27 +453,13 @@
     <section class="content">
       <!-- Info boxes -->
       <div class="row">
-
         <div class="col-md-3 col-sm-6 col-xs-12">
           <div class="info-box">
-            <span class="info-box-icon bg-green"><i class="ion ion-clipboard"></i></span>
+            <span class="info-box-icon bg-aqua"><i class="ion ion-ios-gear-outline"></i></span>
 
             <div class="info-box-content">
-              <span class="info-box-text">Current Lesson</span>
-              <br><span class="info-box-number">Module 15.6</span>
-            </div>
-            <!-- /.info-box-content -->
-          </div>
-          <!-- /.info-box -->
-        </div>
-
-          <div class="col-md-3 col-sm-6 col-xs-12">
-          <div class="info-box">
-            <span class="info-box-icon bg-aqua"><i class="ion ion-android-contacts"></i></span>
-
-            <div class="info-box-content">
-              <span class="info-box-text">Students Online</span>
-              <br><span class="info-box-number">35</span>
+              <span class="info-box-text">CPU Traffic</span>
+              <span class="info-box-number">90<small>%</small></span>
             </div>
             <!-- /.info-box-content -->
           </div>
@@ -491,11 +468,11 @@
         <!-- /.col -->
         <div class="col-md-3 col-sm-6 col-xs-12">
           <div class="info-box">
-            <span class="info-box-icon bg-red"><i class="ion-sad-outline"></i></span>
-            <div class="info-box-content">
-              <span class="info-box-text">Students Confused</span>
-              <br><span class="info-box-number">5</span>
+            <span class="info-box-icon bg-red"><i class="fa fa-google-plus"></i></span>
 
+            <div class="info-box-content">
+              <span class="info-box-text">Likes</span>
+              <span class="info-box-number">41,410</span>
             </div>
             <!-- /.info-box-content -->
           </div>
@@ -505,15 +482,27 @@
 
         <!-- fix for small devices only -->
         <div class="clearfix visible-sm-block"></div>
+
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="info-box">
+            <span class="info-box-icon bg-green"><i class="ion ion-ios-cart-outline"></i></span>
+
+            <div class="info-box-content">
+              <span class="info-box-text">Sales</span>
+              <span class="info-box-number">760</span>
+            </div>
+            <!-- /.info-box-content -->
+          </div>
+          <!-- /.info-box -->
+        </div>
         <!-- /.col -->
         <div class="col-md-3 col-sm-6 col-xs-12">
           <div class="info-box">
-            <span class="info-box-icon bg-yellow"><i class="ion ion-android-globe"></i></span>
+            <span class="info-box-icon bg-yellow"><i class="ion ion-ios-people-outline"></i></span>
 
             <div class="info-box-content">
-              <span class="info-box-text">Remotely Attending</span>
-              <br><span class="info-box-number">10</span>
-
+              <span class="info-box-text">New Members</span>
+              <span class="info-box-number">2,000</span>
             </div>
             <!-- /.info-box-content -->
           </div>
@@ -523,15 +512,11 @@
       </div>
       <!-- /.row -->
 
-
-
-
-
       <div class="row">
         <div class="col-md-12">
           <div class="box">
             <div class="box-header with-border">
-              <h3 class="box-title">Lesson Statistics</h3>
+              <h3 class="box-title">Monthly Recap Report</h3>
 
               <div class="box-tools pull-right">
                 <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
@@ -550,64 +535,37 @@
                 <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
               </div>
             </div>
-
             <!-- /.box-header -->
             <div class="box-body">
               <div class="row">
                 <div class="col-md-8">
-                  <div id="diagram"></div>
-<div class="get">
-	<div class="arc">
-		<span class="text">jQuery</span>
-		<input type="hidden" class="percent" value="95" />
-		<input type="hidden" class="color" value="#97BE0D" />
-	</div>
-	<div class="arc">
+                  <p class="text-center">
+                    <strong>Sales: 1 Jan, 2014 - 30 Jul, 2014</strong>
+                  </p>
 
-		<span class="text">CSS3</span>
-		<input type="hidden" class="percent" value="90" />
-		<input type="hidden" class="color" value="#D84F5F" />
-	</div>
-	<div class="arc">
-		<span class="text">HTML5</span>
-		<input type="hidden" class="percent" value="80" />
-		<input type="hidden" class="color" value="#88B8E6" />
-
-	</div>
-	<div class="arc">
-		<span class="text">PHP</span>
-		<input type="hidden" class="percent" value="53" />
-		<input type="hidden" class="color" value="#BEDBE9" />
-	</div>
-	<div class="arc">
-		<span class="text">MYSQL </span>
-		<input type="hidden" class="percent" value="45" />
-		<input type="hidden" class="color" value="#EDEBEE" />
-	</div>
-</div>
-
-
-
+                  <div class="chart">
+                    <!-- Sales Chart Canvas -->
+                    <canvas id="salesChart" style="height: 180px;"></canvas>
+                  </div>
                   <!-- /.chart-responsive -->
-    </div>
+                </div>
                 <!-- /.col -->
-                <!--GOAL COMPLETION  -->
                 <div class="col-md-4">
                   <p class="text-center">
-                    <strong>Topics</strong>
+                    <strong>Goal Completion</strong>
                   </p>
 
                   <div class="progress-group">
-                    <span class="progress-text">MySQL Installation</span>
+                    <span class="progress-text">Add Products to Cart</span>
                     <span class="progress-number"><b>160</b>/200</span>
 
                     <div class="progress sm">
-                      <div class="progress-bar progress-bar-#88B8E6" style="width: 80%"></div>
+                      <div class="progress-bar progress-bar-aqua" style="width: 80%"></div>
                     </div>
                   </div>
                   <!-- /.progress-group -->
                   <div class="progress-group">
-                    <span class="progress-text">First Tables</span>
+                    <span class="progress-text">Complete Purchase</span>
                     <span class="progress-number"><b>310</b>/400</span>
 
                     <div class="progress sm">
@@ -616,7 +574,7 @@
                   </div>
                   <!-- /.progress-group -->
                   <div class="progress-group">
-                    <span class="progress-text">Ice Cream Database</span>
+                    <span class="progress-text">Visit Premium Page</span>
                     <span class="progress-number"><b>480</b>/800</span>
 
                     <div class="progress sm">
@@ -625,7 +583,7 @@
                   </div>
                   <!-- /.progress-group -->
                   <div class="progress-group">
-                    <span class="progress-text">Deploying to Heroku</span>
+                    <span class="progress-text">Send Inquiries</span>
                     <span class="progress-number"><b>250</b>/500</span>
 
                     <div class="progress sm">
@@ -686,11 +644,6 @@
         <!-- /.col -->
       </div>
       <!-- /.row -->
-
-
-
-
-
 
       <!-- Main row -->
       <div class="row">
@@ -1519,26 +1472,28 @@
 </div>
 <!-- ./wrapper -->
 
+  
+
 <!-- jQuery 3.1.1 -->
-<script src="plugins/jQuery/jquery-3.1.1.min.js"></script>
+<script src="./plugins/jQuery/jquery-3.1.1.min.js"></script>
 <!-- Bootstrap 3.3.7 -->
-<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="./bootstrap/js/bootstrap.min.js"></script>
 <!-- FastClick -->
-<script src="plugins/fastclick/fastclick.js"></script>
+<script src="./plugins/fastclick/fastclick.js"></script>
 <!-- AdminLTE App -->
-<script src="dist/js/adminlte.js"></script>
+<script src="./dist/js/adminlte.js"></script>
 <!-- Sparkline -->
-<script src="plugins/sparkline/jquery.sparkline.min.js"></script>
+<script src="./plugins/sparkline/jquery.sparkline.min.js"></script>
 <!-- jvectormap -->
-<script src="plugins/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
-<script src="plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+<script src="./plugins/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
+<script src="./plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
 <!-- SlimScroll 1.3.0 -->
-<script src="plugins/slimScroll/jquery.slimscroll.min.js"></script>
+<script src="./plugins/slimScroll/jquery.slimscroll.min.js"></script>
 <!-- ChartJS 1.0.1 -->
-<script src="plugins/chartjs/Chart.min.js"></script>
+<script src="./plugins/chartjs/Chart.min.js"></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-<script src="dist/js/pages/dashboard2.js"></script>
+<script src="./dist/js/pages/dashboard2.js"></script>
 <!-- AdminLTE for demo purposes -->
-<script src="dist/js/demo.js"></script>
+<script src="./dist/js/demo.js"></script>
 </body>
 </html>
