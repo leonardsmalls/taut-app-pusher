@@ -457,7 +457,7 @@ firebase.initializeApp(config);
     <section class="content-header">
 
     <input name="lesson-name" type="text">
-<button class="notify-me" onclick="pushItRealGood()">Notify me!</button>
+<button class="notify-me" onclick="notifyMe()">Notify me!</button>
 
 
       <h1>
@@ -1653,29 +1653,6 @@ function notifyMe() {
 
   // At last, if the user has denied notifications, and you 
   // want to be respectful there is no need to bother them any more.
-}
-
-function pushItRealGood() {
-            // Enable pusher logging - don't include this in production
-    Pusher.logToConsole = true;
-
-    var pusher = new Pusher('8fe47ff9e08c85874fce', {
-      cluster: 'us2',
-      encrypted: true
-    });
-
-    var channel = pusher.subscribe('my-channel');
-
-    channel.bind('my-event', function(data) {
-      alert(data.message);
-    });
-
-    channel.bind('pusher:subscription_succeeded', function(data) {
-      console.log(data);
-      console.log('huhunnnuh0000000000000000000000000');
-      alert('data.message');
-      notifyMe();
-    });
 }
 </script>
 
