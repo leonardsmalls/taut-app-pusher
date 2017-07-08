@@ -57,6 +57,17 @@ module.exports = function(app) {
     });
   });
 
+  // Webhook endpoint
+app.post("/client_event", function(req, res) {
+  var timestamp = req.body.time_ms;
+  var events = req.body.events;
+
+  console.log(events);
+
+  // Respond with a success code
+  res.send(200);
+});
+
   // DELETE route for deleting posts
   app.delete("/api/posts/:id", function(req, res) {
     db.question_db.destroy({
