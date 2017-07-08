@@ -615,22 +615,6 @@ firebase.initializeApp(config);
           //}
           theChart();
     });
-      databaseFB.ref(dateStringFB + '/' + lessonNameIN.value + '/3').once('value').then(function(snapshot) {
-          //updates[dbDate + '/' + dbItem + '/' + sa.value] = parseInt(snapshot.val() + 1);
-          //database.ref().update(updates);
-          //if (sa.value == 1) {
-            yVal1 = parseInt(snapshot.val());
-          //} else if (sa.value == 2) {
-            yVal2 = parseInt(snapshot.val());
-          //} else if (sa.value == 3) {
-            yVal3 = parseInt(snapshot.val());
-          //} else if (sa.value == 4) {
-            yVal4 = parseInt(snapshot.val());
-          //} else if (sa.value == 5) {
-            yVal5 = parseInt(snapshot.val());
-          //}
-          theChart();
-    });
   }, 3000);
 
   function theChart() {
