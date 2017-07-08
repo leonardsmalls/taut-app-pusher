@@ -58,7 +58,7 @@ module.exports = function(app) {
   });
 
   // Webhook endpoint
-app.post("/api/taut", function(req, res) {
+app.post("/taut", function(req, res) {
   var timestamp = req.body.time_ms;
   var events = req.body.events;
 
