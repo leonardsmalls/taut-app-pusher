@@ -1666,6 +1666,10 @@ function pushItRealGood() {
 
     var channel = pusher.subscribe('my-channel');
 
+    channel.bind('my-event', function(data) {
+      alert(data.message);
+    });
+
     channel.bind('pusher:subscription_succeeded', function(data) {
       console.log(data);
       console.log('huhunnnuh0000000000000000000000000');
