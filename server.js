@@ -44,7 +44,7 @@ require("./routes/html-routes.js")(app);
 require("./routes/api-routes.js")(app);
 
 var request = require('request');
-var url ='https://requestb.in/uldxf5ul'
+var url ='https://requestb.in/1bmude61'
 request(url, function (error, response, body) {
   if (!error) {
     console.log(body);
