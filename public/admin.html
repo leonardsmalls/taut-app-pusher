@@ -1472,23 +1472,7 @@
 </div>
 <!-- ./wrapper -->
 
-  <script src="https://js.pusher.com/4.1/pusher.min.js"></script>
-  <script>
-
-    // Enable pusher logging - don't include this in production
-    Pusher.logToConsole = true;
-
-    var pusher = new Pusher('8fe47ff9e08c85874fce', {
-      cluster: 'us2',
-      encrypted: true
-    });
-
-    var channel = pusher.subscribe('my-channel');
-    channel.bind('my-event', function(data) {
-      console.log('yipyipyipyipyipyipypiyipyip');
-      alert(data.message);
-    });
-  </script>
+  
 
 <!-- jQuery 3.1.1 -->
 <script src="./plugins/jQuery/jquery-3.1.1.min.js"></script>
