@@ -17,11 +17,11 @@ var pusher = new Pusher({
   encrypted: true
 });
 
-setInterval(function(){
+
 pusher.trigger('my-channel', 'my-event', {
-  "message": "goodby cruel hello world"
+  "message": ""
 });
-}, 5000);
+
 
 // Sets up the Express App
 // =============================================================
