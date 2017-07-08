@@ -21,7 +21,7 @@ setInterval(function(){
 pusher.trigger('my-channel', 'my-event', {
   "message": "goodby cruel hello world"
 });
-}, 5000});
+}, 5000);
 
 // Sets up the Express App
 // =============================================================
