@@ -1,3 +1,5 @@
+var Pusher = require('pusher');
+
 module.exports = function(app) {
 	var pusher = new Pusher({
 	  appId: '364514',
@@ -8,6 +10,6 @@ module.exports = function(app) {
 	});
 
 	pusher.trigger('my-channel', 'my-event', {
-	  "message": "goodbyeeeeeeeeeeee cruel hello world"
+	  "message": "hi"
 	});
 }
