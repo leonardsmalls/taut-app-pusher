@@ -1639,7 +1639,7 @@ function notifyMe() {
     var channel = pusher.subscribe('my-channel');
 
     channel.bind('my-event', function(data) {
-      console.log('yipyipyipyipyipyipypiyipyip');
+      console.log(data);
       alert(data.message);
     });
 

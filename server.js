@@ -6,6 +6,7 @@
 // =============================================================
 var express = require("express");
 var bodyParser = require("body-parser");
+var Pusher = require('pusher');
 
 // Sets up the Express App
 // =============================================================
@@ -28,7 +29,7 @@ app.use(express.static("./public"));
 
 require("./routes/html-routes.js")(app);
 require("./routes/api-routes.js")(app);
-require("./routes/pusher.js")(app);
+require("./routes/pusher.js")(Pusher);
 
 // Syncing our sequelize models and then starting our express app
 db.sequelize.sync({ force: true }).then(function() {
