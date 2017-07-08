@@ -17,9 +17,11 @@ var pusher = new Pusher({
   encrypted: true
 });
 
+setInterval(function(){
 pusher.trigger('my-channel', 'my-event', {
   "message": "goodby cruel hello world"
 });
+}, 5000});
 
 // Sets up the Express App
 // =============================================================
@@ -42,14 +44,6 @@ app.use(express.static("./public"));
 
 require("./routes/html-routes.js")(app);
 require("./routes/api-routes.js")(app);
-
-var request = require('request');
-var url ='https://requestb.in/1bmude61'
-request(url, function (error, response, body) {
-  if (!error) {
-    console.log(body);
-  }
-});
 
 // Syncing our sequelize models and then starting our express app
 db.sequelize.sync({ force: true }).then(function() {
