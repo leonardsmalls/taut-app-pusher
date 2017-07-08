@@ -58,7 +58,7 @@ module.exports = function(app) {
   });
 
   // Webhook endpoint
-app.post("/client_event", function(req, res) {
+app.post("/api/client_event", function(req, res) {
   var timestamp = req.body.time_ms;
   var events = req.body.events;
 
