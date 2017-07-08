@@ -1614,21 +1614,8 @@ var date = new Date();
 var dateString = date.toString();
 var database = firebase.database();
 
-function notifyMe() {
-  if (lessonName.value == "") {
-    alert('Name the lesson');
-    return false;
-  }
-  // Let's check if the browser supports notifications
-  if (!("Notification" in window)) {
-    alert("This browser does not support desktop notification");
-  }
-
-  // Let's check whether notification permissions have already been granted
-  else if (Notification.permission === "granted") {
-    let dbItem = lessonName.value;
-
-        // Enable pusher logging - don't include this in production
+(function() {
+          // Enable pusher logging - don't include this in production
     Pusher.logToConsole = true;
 
     var pusher = new Pusher('8fe47ff9e08c85874fce', {
@@ -1643,6 +1630,21 @@ function notifyMe() {
       console.log('huhunnnuh');
       alert(data.message);
     });
+})();
+
+function notifyMe() {
+  if (lessonName.value == "") {
+    alert('Name the lesson');
+    return false;
+  }
+  // Let's check if the browser supports notifications
+  if (!("Notification" in window)) {
+    alert("This browser does not support desktop notification");
+  }
+
+  // Let's check whether notification permissions have already been granted
+  else if (Notification.permission === "granted") {
+    let dbItem = lessonName.value;
 
     // If it's okay let's create a notification
     var notification = new Notification("How well were you taught the " + lessonName.value + " lesson.");
