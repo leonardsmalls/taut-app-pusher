@@ -1,4 +1,4 @@
-module.exports = function(Pusher) {
+module.exports = function(app) {
 	var pusher = new Pusher({
 	  appId: '364514',
 	  key: '8fe47ff9e08c85874fce',
