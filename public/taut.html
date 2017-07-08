@@ -576,16 +576,6 @@ firebase.initializeApp(config);
 
   <script src="https://js.pusher.com/4.1/pusher.min.js"></script>
   <script>
-
-    // Enable pusher logging - don't include this in production
-    Pusher.logToConsole = true;
-
-    var pusher = new Pusher('8fe47ff9e08c85874fce', {
-      cluster: 'us2',
-      encrypted: true
-    });
-
-    var channel = pusher.subscribe('my-channel');
     
   const dateFB = new Date(),
      dateStringFB = dateFB.toString(),
@@ -1637,6 +1627,16 @@ function notifyMe() {
   // Let's check whether notification permissions have already been granted
   else if (Notification.permission === "granted") {
     let dbItem = lessonName.value;
+
+        // Enable pusher logging - don't include this in production
+    Pusher.logToConsole = true;
+
+    var pusher = new Pusher('8fe47ff9e08c85874fce', {
+      cluster: 'us2',
+      encrypted: true
+    });
+
+    var channel = pusher.subscribe('my-channel');
 
     channel.bind('my-event', function(data) {
       console.log('yipyipyipyipyipyipypiyipyip');
