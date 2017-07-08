@@ -5,6 +5,7 @@
 // Dependencies
 // =============================================================
 var path = require("path");
+var Pusher = require('pusher');
 
 // Routes
 // =============================================================
@@ -28,9 +29,8 @@ module.exports = function(app) {
   });
 
     // blog route loads taut.html
-  app.get("/taut", function(req, res) {
+  app.get("/taut", function(req, res, Pusher) {
     console.log(res);
     res.sendFile(path.join(__dirname, "../public/taut.html"));
   });
-
 };
